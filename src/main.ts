@@ -97,7 +97,7 @@ function drawHub() {
     c.restore();
     btn('act' + i, x, y, w, h, () => { initAudio(); if (locked(i)) { sfx.wrong(); lockWiggle = i; lockT = 0.5; say(L.locked); return; } sfx.snap(); start(i); });
   }
-  // My Town
+  // Color Town
   const ty = 690, p = 1 + Math.sin(T * 3) * 0.03; c.save(); c.translate(195, ty + 50); c.scale(p, p); c.fillStyle = 'rgba(0,0,0,0.12)'; rr(c, -172, -44, 344, 96, 30); c.fill(); c.fillStyle = '#ffd60a'; rr(c, -172, -48, 344, 96, 30); c.fill(); c.lineWidth = 6; c.strokeStyle = '#fff'; c.stroke();
   for (let k = 0; k < 4; k++) { const hx = -140 + k * 62, hh = 30 + (k % 2) * 16; block(c, 'box', hx, 30 - hh, 44, hh, COLORS[(k * 2 + 1) % 7]); block(c, 'tri', hx - 4, 30 - hh - 22, 52, 22, COLORS[(k * 3) % 7]); }
   fluff(c, 128, 20, 0.3, C.orange, T, true, 0); fluff(c, 156, 24, 0.24, C.green, T + 1, true, 1); c.restore();

@@ -12,7 +12,7 @@ export type Plan = keyof typeof PRODUCTS;
 /** Free tier: the first FREE_ACTIVITIES activities on the hub (Puddle Mix, Light & Dark). The rest need the mascot Club. */
 export const FREE_ACTIVITIES = 2;
 export const TERMS_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
-export const PRIVACY_URL = 'https://nhigh723.github.io/nico-game-2/privacy.html';
+export const PRIVACY_URL = 'https://nhigh723.github.io/nico-game-3/privacy.html';
 const KEY = 'np3~club', SIM = 'np3~storeSim';
 type Ent = { club: boolean; plan: Plan | ''; checked: number; hadSub: boolean };
 const load = (): Ent => { try { return { club: false, plan: '', checked: 0, hadSub: false, ...JSON.parse(localStorage.getItem(KEY) || '{}') }; } catch { return { club: false, plan: '', checked: 0, hadSub: false }; } };

@@ -24,7 +24,7 @@
 6. **Paid Apps Agreement:** this is already done if game #1 did it, since it is per account.
 7. **Pricing and subscriptions:**
    - Price: Free, all countries.
-   - Create the subscription group "Nico Club (game 2)" with:
+   - Create the subscription group "Nico Club (game 3)" with:
      - `com.nickhigh.game3.club.yearly`: 1 year, $29.99, 7-day free trial, level 1.
      - `com.nickhigh.game3.club.monthly`: 1 month, $4.99, 7-day free trial, level 2.
    - Create the non-consumable `com.nickhigh.game3.forever` at $59.99.
