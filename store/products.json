@@ -1,0 +1,11 @@
+{
+  "bundleId": "com.nickhigh.game3",
+  "subscriptionGroup": "Nico Club (game 3)",
+  "products": [
+    { "id": "com.nickhigh.game3.club.yearly", "type": "auto-renewable subscription", "duration": "1 year", "price": "29.99 USD", "introOffer": "7-day free trial", "groupLevel": 1 },
+    { "id": "com.nickhigh.game3.club.monthly", "type": "auto-renewable subscription", "duration": "1 month", "price": "4.99 USD", "introOffer": "7-day free trial", "groupLevel": 2 },
+    { "id": "com.nickhigh.game3.forever", "type": "non-consumable", "price": "59.99 USD" }
+  ],
+  "freeTier": "Activities 1-2 (Puddle Mix, Light & Dark); everything else needs the Club or Forever",
+  "source": "src/store.ts PRODUCTS must match these ids"
+}
