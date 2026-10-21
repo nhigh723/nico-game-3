@@ -1,0 +1,53 @@
+# Codemagic cloud build for game #3 (com.nickhigh.game3): same signing setup as the science-game (integration "codemagic", group "ios_signing_key", secret CERTIFICATE_PRIVATE_KEY). Steps: docs/SUBMIT.md
+# One-time setup (see docs/SUBMIT.md):
+#   1. Team settings > Team integrations > Developer Portal: add your App Store Connect API key, named "codemagic".
+#   2. App > Environment variables: secret CERTIFICATE_PRIVATE_KEY in group "ios_signing_key".
+#   3. Set APP_STORE_APPLE_ID below to the app's Apple ID from App Store Connect (App Information page).
+workflows:
+  ios-release:
+    name: iOS release (TestFlight)
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: codemagic
+    environment:
+      node: 20
+      xcode: latest
+      cocoapods: default
+      groups:
+        - ios_signing_key
+      vars:
+        BUNDLE_ID: com.nickhigh.game3
+        XCODE_WORKSPACE: ios/App/App.xcworkspace
+        XCODE_SCHEME: App
+        APP_STORE_APPLE_ID: 0000000000   # <- replace with the number from App Store Connect
+    scripts:
+      - name: Install and build web app
+        script: |
+          npm ci
+          npm run build
+          npx cap sync ios
+      - name: Install CocoaPods
+        script: cd ios/App && pod install
+      - name: Automatic code signing (creates cert/profile via API key if missing)
+        script: |
+          keychain initialize
+          app-store-connect fetch-signing-files "$BUNDLE_ID" \
+            --type IOS_APP_STORE \
+            --certificate-key=@env:CERTIFICATE_PRIVATE_KEY \
+            --create
+          keychain add-certificates
+          xcode-project use-profiles
+      - name: Bump build number
+        script: |
+          LATEST=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" || echo 0)
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*;/CURRENT_PROJECT_VERSION = $((LATEST + 1));/g" ios/App/App.xcodeproj/project.pbxproj
+      - name: Build IPA
+        script: xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false
