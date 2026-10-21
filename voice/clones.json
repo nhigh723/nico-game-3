@@ -53,6 +53,22 @@
 "take": "1acsq8n~7",
 "text": "Your painting is on the wall in Color Town!"
 },
+"1b2tzsz": {
+"heard": "Black?",
+"padded": true,
+"sim": 0.946,
+"take": "1b2tzsz~1",
+"text": "Black!",
+"trimmed_sim": 0.714
+},
+"1b7dr9q": {
+"heard": "Brown",
+"padded": true,
+"sim": 0.961,
+"take": "1b7dr9q~3",
+"text": "Brown!",
+"trimmed_sim": 0.788
+},
 "1ct740e": {
 "heard": "Same on both sides.",
 "sim": 0.912,
@@ -65,11 +81,35 @@
 "take": "1d3rs98~7",
 "text": "Make the paint match! White makes it lighter. Black makes it darker."
 },
+"1e9g2d4": {
+"heard": "Hooray!",
+"padded": true,
+"sim": 0.942,
+"take": "1e9g2d4~3",
+"text": "Hooray!",
+"trimmed_sim": 0.731
+},
 "1eafbp6": {
 "heard": "All the colors together make brown.",
 "sim": 0.922,
 "take": "1eafbp6~2",
 "text": "All the colors together make brown!"
+},
+"1efno5z": {
+"heard": "green",
+"padded": true,
+"sim": 0.941,
+"take": "1efno5z~3",
+"text": "Green!",
+"trimmed_sim": 0.738
+},
+"1fo222q": {
+"heard": "Yellow",
+"padded": true,
+"sim": 0.939,
+"take": "1fo222q~5",
+"text": "Yellow!",
+"trimmed_sim": 0.728
 },
 "1go70jn": {
 "heard": "Can you make pink?",
@@ -89,6 +129,14 @@
 "take": "1i2rlml~3",
 "text": "A perfect match!"
 },
+"1j6otxr": {
+"heard": "new color!",
+"padded": true,
+"sim": 0.952,
+"take": "1j6otxr~3",
+"text": "New color!",
+"trimmed_sim": 0.752
+},
 "1kaqbcy": {
 "heard": "You finished the pattern. Hop, hop, hop.",
 "sim": 0.908,
@@ -106,6 +154,30 @@
 "sim": 0.906,
 "take": "1lh0azp~2",
 "text": "Red and white make pink!"
+},
+"1m8lawb": {
+"heard": "Stamp!",
+"padded": true,
+"sim": 0.939,
+"take": "1m8lawb~3",
+"text": "Stamp!",
+"trimmed_sim": 0.717
+},
+"1ndi1s2": {
+"heard": "Orange",
+"padded": true,
+"sim": 0.938,
+"take": "1ndi1s2~4",
+"text": "Orange!",
+"trimmed_sim": 0.813
+},
+"1olhttz": {
+"heard": "white!",
+"padded": true,
+"sim": 0.942,
+"take": "1olhttz~3",
+"text": "White!",
+"trimmed_sim": 0.789
 },
 "1tajjiq": {
 "heard": "Let us try again. Listen to the color.",
@@ -143,6 +215,22 @@
 "take": "2psi7o~4",
 "text": "Ask a grown-up to open this one!"
 },
+"3kuyb2": {
+"heard": "Blue!",
+"padded": true,
+"sim": 0.968,
+"take": "3kuyb2~1",
+"text": "Blue!",
+"trimmed_sim": 0.704
+},
+"3uoc9k": {
+"heard": "pink",
+"padded": true,
+"sim": 0.945,
+"take": "3uoc9k~1",
+"text": "Pink!",
+"trimmed_sim": 0.732
+},
 "9sd9fs": {
 "heard": "Stomp stomp, let us mix!",
 "sim": 0.876,
@@ -154,6 +242,14 @@
 "sim": 0.926,
 "take": "bh4421~1",
 "text": "A new friend came to Color Town!"
+},
+"bz8try": {
+"heard": "Purple!",
+"padded": true,
+"sim": 0.944,
+"take": "bz8try~5",
+"text": "Purple!",
+"trimmed_sim": 0.764
 },
 "cb6ypb": {
 "heard": "Light green!",
@@ -227,6 +323,14 @@
 "take": "pez92q~6",
 "text": "The town is gray. Let us paint it bright!"
 },
+"qup7hb": {
+"heard": "darker.",
+"padded": true,
+"sim": 0.947,
+"take": "qup7hb~3",
+"text": "Darker!",
+"trimmed_sim": 0.741
+},
 "rs6n8i": {
 "heard": "Can you make green?",
 "sim": 0.886,
@@ -268,5 +372,13 @@
 "sim": 0.95,
 "take": "xz5yo6~2",
 "text": "Ooh, a brand new color! Let us keep it."
+},
+"yk1ykh": {
+"heard": "Red?",
+"padded": true,
+"sim": 0.944,
+"take": "yk1ykh~2",
+"text": "Red!",
+"trimmed_sim": 0.763
 }
 }
