@@ -1,4 +1,4 @@
-# Nico Puddle Painter (game #3)
+# Fizby's Puddle Painter (game #3)
 Ages 3-6 color game: mix puddles, light & dark, rainbow-road patterns, mirror butterfly, color sort rain, paint studio, plus Color Town that fills with color. No text, every instruction spoken (cloned voice, device voice fallback), hand demos, single-tap Back, no ads/tracking.
 Brand lives in `src/brand.ts` (MASCOT_NAME, GAME_TITLE); lines naming the mascot are in `NAMED` in `src/lines.ts`. App id `com.nickhigh.game3`.
 - `npm run build`, `npx vite preview --port 4181`

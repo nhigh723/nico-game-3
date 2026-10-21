@@ -29,9 +29,9 @@ items, td = json.load(open(argv[1])), argv[2]; gate = json.load(open(f'{td}/gate
 os.makedirs(OUT, exist_ok=True); mf = f'{OUT}/manifest.json'; man = json.load(open(mf)) if os.path.exists(mf) else {}
 recf = f'{G}/voice/clones.json'; rec = json.load(open(recf)) if os.path.exists(recf) else {}
 HOMO = {'two': '2', 'to': '2', 'too': '2', 'one': '1', 'won': '1', 'three': '3', 'four': '4', 'for': '4', 'five': '5', 'six': '6', 'eight': '8', 'ate': '8', 'ten': '10', 'eleven': '11', 'twelve': '12', 'thirteen': '13', 'fourteen': '14', 'fifteen': '15', 'sixteen': '16', 'seventeen': '17', 'eighteen': '18', 'nineteen': '19', 'twenty': '20'}
-NAME_RE = r"nico|neeko|nikko|niko"  # spellings Whisper may use for the mascot name
+NAME_RE = r"nico|neeko|nikko|niko|fizby|fizbee|fizbie|fisby|fisbee|fizzby|fizzbee|frisby|frisbee|fizzbe"  # spellings Whisper may use for the mascot name
 def w1(x): x = HOMO.get(x, x); return 'mascot' if re.fullmatch(NAME_RE, x) else x
-def words(t): return [w1(w) for w in re.sub(r"[^a-z0-9' ]", ' ', t.lower().replace('+', ' plus ').replace('-', ' ')).split()]
+def words(t): t = re.sub(r'\bfi[sz]+[ -]?b(ee|y|ie|e)\b', 'fizby', t.lower()); return [w1(w) for w in re.sub(r"[^a-z0-9' ]", ' ', t.lower().replace('+', ' plus ').replace('-', ' ')).split()]
 def wer(r, h): r, h = words(r), words(h); return 1 - sum(b.size for b in difflib.SequenceMatcher(None, r, h).get_matching_blocks()) / max(1, len(r))
 TXT = dict(map(tuple, items)); added, failed = 0, []
 for h, text in items:

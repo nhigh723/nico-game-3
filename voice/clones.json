@@ -54,12 +54,22 @@
 "text": "Your painting is on the wall in Color Town!"
 },
 "1b2tzsz": {
-"heard": "Black?",
+"check": {
+"bad": [],
+"edge_in": -18.8,
+"edge_out": -37.9,
+"heard": "Black!",
+"islands": 1,
+"lead": 60,
+"lufs": -16.45,
+"trail": 60
+},
+"heard": "Black!",
 "padded": true,
-"sim": 0.946,
-"take": "1b2tzsz~1",
+"sim": 0.93,
+"take": "1b2tzsz~0",
 "text": "Black!",
-"trimmed_sim": 0.714
+"trimmed_sim": 0.726
 },
 "1b7dr9q": {
 "heard": "Brown",
@@ -82,12 +92,22 @@
 "text": "Make the paint match! White makes it lighter. Black makes it darker."
 },
 "1e9g2d4": {
+"check": {
+"bad": [],
+"edge_in": -35.8,
+"edge_out": -36.7,
+"heard": "Hooray!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.39,
+"trail": 50
+},
 "heard": "Hooray!",
 "padded": true,
 "sim": 0.942,
 "take": "1e9g2d4~3",
 "text": "Hooray!",
-"trimmed_sim": 0.731
+"trimmed_sim": 0.708
 },
 "1eafbp6": {
 "heard": "All the colors together make brown.",
@@ -96,10 +116,20 @@
 "text": "All the colors together make brown!"
 },
 "1efno5z": {
-"heard": "green",
+"check": {
+"bad": [],
+"edge_in": -19.6,
+"edge_out": -28.9,
+"heard": "Green!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.4,
+"trail": 50
+},
+"heard": "Green!",
 "padded": true,
-"sim": 0.941,
-"take": "1efno5z~3",
+"sim": 0.928,
+"take": "1efno5z~4",
 "text": "Green!",
 "trimmed_sim": 0.738
 },
@@ -110,6 +140,24 @@
 "take": "1fo222q~5",
 "text": "Yellow!",
 "trimmed_sim": 0.728
+},
+"1g0t9r6": {
+"check": {
+"bad": [],
+"edge_in": -36.2,
+"edge_out": -41.1,
+"heard": "Hi, I'm Fizbee. Let's paint!",
+"islands": 3,
+"lead": 60,
+"lufs": -17.19,
+"trail": 45
+},
+"heard": "Hi, I'm Fizbee. Let's paint!",
+"padded": true,
+"sim": 0.966,
+"take": "1g0t9r6~3",
+"text": "Hi! I'm Fizby. Let's paint!",
+"trimmed_sim": 0.912
 },
 "1go70jn": {
 "heard": "Can you make pink?",
@@ -130,12 +178,22 @@
 "text": "A perfect match!"
 },
 "1j6otxr": {
-"heard": "new color!",
+"check": {
+"bad": [],
+"edge_in": -21.6,
+"edge_out": -37.2,
+"heard": "New color!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.48,
+"trail": 80
+},
+"heard": "New color!",
 "padded": true,
 "sim": 0.952,
 "take": "1j6otxr~3",
 "text": "New color!",
-"trimmed_sim": 0.752
+"trimmed_sim": 0.782
 },
 "1kaqbcy": {
 "heard": "You finished the pattern. Hop, hop, hop.",
@@ -156,12 +214,22 @@
 "text": "Red and white make pink!"
 },
 "1m8lawb": {
+"check": {
+"bad": [],
+"edge_in": -33.3,
+"edge_out": -36.6,
+"heard": "Stamp!",
+"islands": 1,
+"lead": 55,
+"lufs": -16.44,
+"trail": 50
+},
 "heard": "Stamp!",
 "padded": true,
 "sim": 0.939,
 "take": "1m8lawb~3",
 "text": "Stamp!",
-"trimmed_sim": 0.717
+"trimmed_sim": 0.725
 },
 "1ndi1s2": {
 "heard": "Orange",
@@ -172,12 +240,22 @@
 "trimmed_sim": 0.813
 },
 "1olhttz": {
-"heard": "white!",
+"check": {
+"bad": [],
+"edge_in": -29.2,
+"edge_out": -36.8,
+"heard": "White!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.45,
+"trail": 50
+},
+"heard": "White!",
 "padded": true,
-"sim": 0.942,
-"take": "1olhttz~3",
+"sim": 0.932,
+"take": "1olhttz~6",
 "text": "White!",
-"trimmed_sim": 0.789
+"trimmed_sim": 0.725
 },
 "1tajjiq": {
 "heard": "Let us try again. Listen to the color.",
@@ -216,20 +294,40 @@
 "text": "Ask a grown-up to open this one!"
 },
 "3kuyb2": {
+"check": {
+"bad": [],
+"edge_in": -31.4,
+"edge_out": -29.3,
+"heard": "Blue!",
+"islands": 1,
+"lead": 55,
+"lufs": -16.45,
+"trail": 60
+},
 "heard": "Blue!",
 "padded": true,
 "sim": 0.968,
 "take": "3kuyb2~1",
 "text": "Blue!",
-"trimmed_sim": 0.704
+"trimmed_sim": 0.743
 },
 "3uoc9k": {
-"heard": "pink",
+"check": {
+"bad": [],
+"edge_in": -16.6,
+"edge_out": -39.3,
+"heard": "Pink!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.85,
+"trail": 70
+},
+"heard": "Pink!",
 "padded": true,
-"sim": 0.945,
-"take": "3uoc9k~1",
+"sim": 0.927,
+"take": "3uoc9k~7",
 "text": "Pink!",
-"trimmed_sim": 0.732
+"trimmed_sim": 0.659
 },
 "9sd9fs": {
 "heard": "Stomp stomp, let us mix!",
@@ -243,13 +341,41 @@
 "take": "bh4421~1",
 "text": "A new friend came to Color Town!"
 },
+"bl14et": {
+"check": {
+"bad": [],
+"edge_in": -22.2,
+"edge_out": -33.6,
+"heard": "Lighter!",
+"islands": 1,
+"lead": 55,
+"lufs": -16.54,
+"trail": 60
+},
+"heard": "Lighter!",
+"padded": true,
+"sim": 0.931,
+"take": "bl14et~1",
+"text": "Lighter!",
+"trimmed_sim": 0.762
+},
 "bz8try": {
+"check": {
+"bad": [],
+"edge_in": -27.5,
+"edge_out": -36.3,
+"heard": "Purple!",
+"islands": 1,
+"lead": 50,
+"lufs": -16.42,
+"trail": 50
+},
 "heard": "Purple!",
 "padded": true,
 "sim": 0.944,
 "take": "bz8try~5",
 "text": "Purple!",
-"trimmed_sim": 0.764
+"trimmed_sim": 0.759
 },
 "cb6ypb": {
 "heard": "Light green!",
@@ -324,12 +450,22 @@
 "text": "The town is gray. Let us paint it bright!"
 },
 "qup7hb": {
-"heard": "darker.",
+"check": {
+"bad": [],
+"edge_in": -23.0,
+"edge_out": -40.2,
+"heard": "darker",
+"islands": 1,
+"lead": 50,
+"lufs": -16.38,
+"trail": 55
+},
+"heard": "Darker.",
 "padded": true,
 "sim": 0.947,
 "take": "qup7hb~3",
 "text": "Darker!",
-"trimmed_sim": 0.741
+"trimmed_sim": 0.77
 },
 "rs6n8i": {
 "heard": "Can you make green?",

@@ -1,4 +1,4 @@
-// Nico Puddle Painter: app shell. Screens, input routing, save, wins/unlocks, hint hand, Color Town, grown-ups area + parental gate.
+// Fizby's Puddle Painter: app shell. Screens, input routing, save, wins/unlocks, hint hand, Color Town, grown-ups area + parental gate.
 import { CLUB_NAME, GAME_TITLE } from './brand';
 import { W, H, INK, COLORS, mascot, mascotBust, hand, sky, confettiDraw, rr, shade, block, type Ctx, type Pose } from './art';
 import { initAudio, sfx, say as voiceSay, isSpeaking, setMuted, muted, missing } from './audio';

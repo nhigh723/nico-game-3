@@ -1,4 +1,4 @@
-// Every line Nico says (static strings, collected by scripts/voice-lines.mjs). Names come from brand.ts.
+// Every line the mascot says (static strings, collected by scripts/voice-lines.mjs). Names come from brand.ts.
 import { MASCOT_NAME } from './brand';
 import { NAME_LINE, MIX_LINE } from './paint';
 /** The only lines that say the mascot's name: re-clone just these after a rename (voice-lines.mjs --named). */

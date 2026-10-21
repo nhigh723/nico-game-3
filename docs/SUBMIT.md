@@ -1,4 +1,4 @@
-# Getting Nico Puddle Painter (game #3) into the App Store
+# Getting Fizby's Puddle Painter (game #3) into the App Store
 
 **Already done in this repo (nothing to do):**
 - Capacitor iOS project with bundle id `com.nickhigh.game3`: portrait, iPhone only, iOS 15+, status bar hidden, and `ITSAppUsesNonExemptEncryption=false`.
@@ -14,8 +14,8 @@
 ## What Nick has to do by hand
 
 ### Before anything else
-1. **Final name:** the name is on hold for the attorney check. Set `MASCOT_NAME` in `src/brand.ts`, then update the static names listed in the README. Apple's app name must be unique.
-2. **Support email:** send one so it can go on `support.html` and `privacy.html`. Apple rejects pages without a contact.
+1. **Final name:** Fizby is chosen and already set everywhere (`src/brand.ts`, Info.plist, capacitor.config.json, the pages). Apple's app name must be unique, so confirm it is free when you create the app in step 4.
+2. **Support email:** done. `nickrhigh@yahoo.com` is on `support.html` and `privacy.html`; use it as the App Store Connect support contact too.
 
 ### Apple Developer and App Store Connect
 3. **Register the bundle id:** developer.apple.com → Certificates, Identifiers & Profiles → Identifiers → **+** → App IDs → App. Use the explicit bundle ID `com.nickhigh.game3` and leave every capability off. In-App Purchase is on by default.
@@ -24,7 +24,7 @@
 6. **Paid Apps Agreement:** this is already done if game #1 did it, since it is per account.
 7. **Pricing and subscriptions:**
    - Price: Free, all countries.
-   - Create the subscription group "Nico Club (game 3)" with:
+   - Create the subscription group "Fizby Club (game 3)" with:
      - `com.nickhigh.game3.club.yearly`: 1 year, $29.99, 7-day free trial, level 1.
      - `com.nickhigh.game3.club.monthly`: 1 month, $4.99, 7-day free trial, level 2.
    - Create the non-consumable `com.nickhigh.game3.forever` at $59.99.
