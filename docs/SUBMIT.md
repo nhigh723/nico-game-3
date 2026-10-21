@@ -1,4 +1,4 @@
-# Getting Nico Puddle Painter (game #2) into the App Store
+# Getting Nico Puddle Painter (game #3) into the App Store
 
 **Already done in this repo (nothing to do):**
 - Capacitor iOS project with bundle id `com.nickhigh.game3`: portrait, iPhone only, iOS 15+, status bar hidden, and `ITSAppUsesNonExemptEncryption=false`.
