@@ -1,8 +1,8 @@
 // App icon (every size) + launch art, rendered by the game's own canvas art (window.__snap.renderArt) in headless Chrome.
-// Needs `npm run preview` on :4180. Full-bleed square, no alpha, no baked corners (Apple rounds them).
+// Needs `npm run preview` on :4181. Full-bleed square, no alpha, no baked corners (Apple rounds them).
 import { chromium } from 'playwright-core'; import sharp from 'sharp'; import fs from 'node:fs';
 const b = await chromium.launch({ executablePath: '/usr/bin/google-chrome' }); const p = await (await b.newContext()).newPage();
-await p.goto(process.env.URL || 'http://localhost:4180/'); await p.waitForTimeout(800);
+await p.goto(process.env.URL || 'http://localhost:4181/'); await p.waitForTimeout(800);
 const png = async k => Buffer.from((await p.evaluate(k => window.__snap.renderArt(k), k)).split(',')[1], 'base64'); const icon = await png('icon'), splash = await png('splash'); await b.close();
 fs.mkdirSync('store/icons', { recursive: true }); const src = await sharp(icon).removeAlpha().png().toBuffer();
 await sharp(src).toFile('store/icons/icon-1024.png');
